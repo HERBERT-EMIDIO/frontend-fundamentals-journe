@@ -1,7 +1,8 @@
-# frontend-fundamentals-journe
-A comprehensive repository documenting my journey through HTML5, CSS3, and JS, focusing on semantic structures and best practices as a foundation for future PHP/Laravel full-stack development
 
 # Frontend Fundamentals Journey 🚀
+
+" frontend-fundamentals-journe
+A comprehensive repository documenting my journey through HTML5, CSS3, and JS, focusing on semantic structures and best practices as a foundation for future PHP/Laravel full-stack development "
 
 ## 📌 About
 This project is the foundational stage of my web development career. Here, I document my progress in building high-quality, semantic, and accessible web interfaces. 
