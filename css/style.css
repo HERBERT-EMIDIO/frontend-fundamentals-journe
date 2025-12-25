@@ -1,0 +1,120 @@
+/* ==========================================
+   [ ROOT VARIABLES ]
+   Centralized colors and fonts for easy 
+   maintenance and future AI automation.
+   ========================================== 
+*/
+:root {
+    /* Primary Colors */
+    --primary-coffee: #3C2A21;
+    /* Dark Mocha */
+    --accent-gold: #D4A373;
+    /* Warm Caramel */
+    --bg-cream: #FAF1E4;
+    /* Soft Background */
+
+    /* Text Colors */
+    --text-main: #1A120B;
+    --text-light: #F5F5F5;
+
+    /* Spacing & Borders */
+    --base-padding: 20px;
+    --border-radius: 8px;
+}
+
+/* ==========================================
+   [ GENERAL RESET ]
+   Removing default browser margins for 
+   consistent layout across all browsers.
+   ========================================== 
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Crucial for layout calculation */
+    font-family: 'Arial', sans-serif;
+    /* We will upgrade to Google Fonts later */
+}
+
+body {
+    background-color: var(--bg-cream);
+    color: var(--text-main);
+    line-height: 1.6;
+    /* Improves readability (Melhora a leitura) */
+}
+
+/* ==========================================
+   [ HEADER & NAVIGATION ]
+   Styling the top part of our Coffee Shop.
+   ========================================== 
+*/
+header {
+    background-color: var(--primary-coffee);
+    color: var(--text-light);
+    padding: 1rem var(--base-padding);
+    display: flex;
+    justify-content: space-between;
+    /* Logo on left, Nav on right */
+    align-items: center;
+}
+
+.main-navigation ul {
+    display: flex;
+    list-style: none;
+    /* Removes the dots from the list */
+}
+
+.main-navigation ul li {
+    margin-left: 20px;
+}
+
+.main-navigation ul li a {
+    color: var(--text-light);
+    text-decoration: none;
+    /* Removes the underline */
+    font-weight: bold;
+    transition: 0.3s;
+    /* Smooth color change on hover */
+}
+
+.main-navigation ul li a:hover {
+    color: var(--accent-gold);
+    /* Feedback effect */
+}
+
+/* ==========================================
+   [ HERO SECTION ]
+   The main visual impact of the website.
+   ========================================== 
+*/
+.hero-section {
+    padding: 60px var(--base-padding);
+    text-align: center;
+    background-color: #E9E4D4;
+    /* Slightly different cream for depth */
+}
+
+.btn-primary {
+    background-color: var(--primary-coffee);
+    color: var(--text-light);
+    padding: 12px 24px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-gold);
+    color: var(--primary-coffee);
+}
+
+/* Styling the coffee icon specifically */
+.signature i {
+    color: var(--accent-gold);
+    margin: 0 5px;
+    /* Adds space around the icon / Espaço ao redor do ícone */
+    font-size: 1.1rem;
+}
