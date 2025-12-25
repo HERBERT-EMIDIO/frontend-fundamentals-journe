@@ -303,3 +303,70 @@ footer {
     color: var(--accent-gold);
     padding-left: 10px; /* Subtle movement effect */
 }
+
+/* ==========================================
+   [ RESPONSIVE DESIGN - MEDIA QUERIES ]
+   Adjusting the layout for mobile devices.
+   Ajustando o layout para dispositivos móveis.
+   ========================================== 
+*/
+
+/* Tablet and Mobile (Screens smaller than 768px) */
+@media (max-width: 768px) {
+    
+    /* 1. Header: Stack the logo and navigation */
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: var(--base-padding);
+    }
+
+    .main-navigation {
+        margin-top: 15px;
+    }
+
+    .main-navigation ul li {
+        margin: 0 10px; /* Better spacing for finger touch */
+    }
+
+    /* 2. About Section: Stack Image and Text */
+    .about-container {
+        flex-direction: column; /* Image top, text bottom */
+        text-align: center;
+        gap: 30px;
+    }
+
+    .about-image {
+        order: 1; /* Ensures image stays on top */
+    }
+
+    .about-text {
+        order: 2;
+    }
+
+    .about-text h2 {
+        font-size: 2rem;
+    }
+
+    /* 3. Hero Section: Adjust font size */
+    .hero-section h2 {
+        font-size: 1.8rem;
+    }
+
+    /* 4. Contact Form: Full width padding */
+    .contact-form {
+        padding: 20px;
+    }
+}
+
+/* Small Mobile (Screens smaller than 480px) */
+@media (max-width: 480px) {
+    .main-navigation ul {
+        flex-wrap: wrap; /* Allows links to jump to next line if needed */
+        justify-content: center;
+    }
+    
+    .main-navigation ul li {
+        margin: 5px 10px;
+    }
+}
