@@ -118,3 +118,101 @@ header {
     /* Adds space around the icon / Espaço ao redor do ícone */
     font-size: 1.1rem;
 }
+
+/* ==========================================
+   [ MENU SECTION - GRID SYSTEM ]
+   Organizing products in a responsive grid.
+   Organizando produtos em uma grade responsiva.
+   ========================================== 
+*/
+.menu-section {
+    padding: 60px var(--base-padding);
+    max-width: 1200px; /* Limits the width for large screens */
+    margin: 0 auto;    /* Centers the section */
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    color: var(--primary-coffee);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* The Grid Container */
+.menu-grid {
+    display: grid;
+    /* auto-fit: creates as many columns as possible */
+    /* minmax: column must be at least 250px, but can grow */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px; /* Space between the coffee cards */
+}
+
+/* ==========================================
+   [ PRODUCT CARDS ]
+   Styling individual coffee items.
+   Estilizando itens de café individuais.
+   ========================================== 
+*/
+.product-card {
+    background-color: #ffffff;
+    padding: var(--base-padding);
+    border-radius: var(--border-radius);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eee;
+}
+
+/* Hover Effect: Card "lifts up" */
+.product-card:hover {
+    transform: translateY(-10px); /* Moves up 10px */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.product-card h3 {
+    color: var(--primary-coffee);
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.product-card .price {
+    display: block;
+    font-weight: bold;
+    color: var(--accent-gold);
+    font-size: 1.2rem;
+}
+
+/* ==========================================
+   [ FOOTER & SIGNATURE ]
+   ========================================== 
+*/
+footer {
+    background-color: var(--primary-coffee);
+    color: var(--text-light);
+    padding: 40px var(--base-padding);
+    text-align: center;
+    margin-top: 50px;
+}
+
+.signature {
+    margin-top: 15px;
+}
+
+.signature a {
+    color: var(--accent-gold);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signature a:hover {
+    text-decoration: underline;
+}
