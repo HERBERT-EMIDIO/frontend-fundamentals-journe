@@ -1,60 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brew & Beans | Premium Coffee Shop</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brew & Beans | Premium Coffee Shop</title>
+
+        <link rel="stylesheet" href="css/style.css">
     </head>
-<body>
+    <body>
 
-    <header>
-        <div class="logo">
-            <h1>Brew & Beans</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+        <header>
+            <div class="header-container">
+                <h1>Brew & Beans</h1>
 
-    <main>
+                <nav class="main-navigation">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-        <section id="home" class="hero">
-            <h2>Perfect Coffee for Your Daily Routine</h2>
-            <p>Experience the finest beans from around the world.</p>
-            <button>Order Now</button>
-        </section>
+        <main>
 
-        <section id="menu" class="menu-container">
-            <h2>Our Specialized Menu</h2>
-            
-            <article class="menu-item">
-                <h3>Espresso</h3>
-                <p>Strong and bold, the classic choice.</p>
-                <span>$3.50</span>
-            </article>
+            <section id="home" class="hero-section">
+                <div class="hero-content">
+                    <h2>Freshly Brewed Happiness</h2>
+                    <p>The best beans, roasted to perfection.</p>
+                    <button class="btn-primary">View Menu</button>
+                </div>
+            </section>
 
-            <article class="menu-item">
-                <h3>Cappuccino</h3>
-                <p>Steamed milk foam with a rich coffee base.</p>
-                <span>$4.50</span>
-            </article>
-        </section>
+            <section id="menu" class="menu-section">
+                <header class="section-header">
+                    <h2>Our Specialties</h2>
+                </header>
 
-        <section id="about" class="about-section">
-            <h2>Our Story</h2>
-            <p>We've been roasting beans since 2010 with passion and care.</p>
-        </section>
+                <div class="menu-grid">
+                    <article class="product-card">
+                        <h3>Dark Roast</h3>
+                        <p>Deep, smoky, and intense flavor.</p>
+                        <span class="price">$4.00</span>
+                    </article>
+                    <article class="product-card">
+                        <h3>Caramel Macchiato</h3>
+                        <p>Sweet caramel with creamy milk.</p>
+                        <span class="price">$5.50</span>
+                    </article>
+                </div>
+            </section>
 
-    </main>
+        </main>
 
-    <footer>
-        <p>&copy; 2024 Brew & Beans Coffee Shop. All rights reserved.</p>
-    </footer>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Brew & Beans. All rights reserved.</p>
+                <p>Built with ❤️ for learning HTML, JS and PHP/Laravel.</p>
+            </div>
+        </footer>
 
-</body>
+        <script src="js/main.js"></script>
+    </body>
 </html>
